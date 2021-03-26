@@ -43,7 +43,7 @@ const changeCombination = () => {
     if (s1.innerHTML === s2.innerHTML && s2.innerHTML === s3.innerHTML) {
       gameOverBox.classList.remove("hidden");
       resultBox.innerHTML = "You Won!";
-      resultBox.style.color = "green"
+      resultBox.style.color = "green";
       messageBox.innerHTML = `You took ${attempts} ${
         attempts === 1 ? "attempt" : "attempts"
       }`;
@@ -52,19 +52,18 @@ const changeCombination = () => {
   } else {
     gameOverBox.classList.remove("hidden");
     resultBox.innerHTML = "You Lose";
-    resultBox.style.color = "red"
+    resultBox.style.color = "red";
     messageBox.innerHTML = `Try next time`;
     emoji.innerHTML = "😔";
   }
 };
-
 
 const resetGame = () => {
   gameOverBox.classList.add("hidden");
   attempts = 0;
   updateAttempts();
   slot.forEach((e) => {
-    e.innerHTML = "--";
+    e.innerHTML = "-";
   });
 };
 

@@ -143,11 +143,8 @@ body {
 @media screen and (max-width: 839px) {
   #game-over {
     width: 90vw;
-    height: 90vh;
+    height: 70vh;
     font-size: 2rem;
-  }
-  #game-over #result {
-    font-size: 6rem;
   }
   .slot {
     padding: 0.2rem 3rem;
@@ -159,11 +156,17 @@ body {
   }
 }
 @media screen and (max-width: 514px) {
+  body {
+    overflow: hidden;
+  }
   #slot-machine {
     padding: 0.1rem 1rem;
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
   #trigger button {
-    font-size: 6.4rem;
+    font-size: 5rem;
   }
+  #game-over #emoji {
+  font-size: 6rem;
+}
 }

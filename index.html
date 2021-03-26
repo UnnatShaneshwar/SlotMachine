@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="main_heading">🎰 Slot Machine 🎰</h1>
+      <div id="attempts-container">
+        <span>Attempts left : <span id="attempts"></span></span>
+        <span>Total : 30</span>
+      </div>
+      <div id="slot-machine-container">
+        <div id="slot-machine">
+          <div id="slots">
+            <div id="slot1" class="slot">--</div>
+            <div id="slot2" class="slot">--</div>
+            <div id="slot3" class="slot">--</div>
+          </div>
+          <div id="trigger">
+            <button id="trigger-btn">🎚️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="game-over-container" class="hidden">
+      <span id="game-over-back"></span>
+      <div id="game-over">
+        <h1 id="result"></h1>
+        <h3 id="message"></h3>
+        <span id="emoji"></span>
+        <div id="action-button">
+          <button class="btn" id="play-again">Play again</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

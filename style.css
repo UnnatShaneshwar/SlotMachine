@@ -160,9 +160,10 @@ body {
 }
 @media screen and (max-width: 514px) {
   #slot-machine {
-    font-size: 4.7rem;
+    padding: 0.1rem 1rem;
+    font-size: 4.2rem;
   }
   #trigger button {
-    font-size: 6.7rem;
+    font-size: 6.4rem;
   }
 }
